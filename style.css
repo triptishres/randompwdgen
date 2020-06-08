@@ -1,0 +1,119 @@
+body {
+    background-color: #f9fbfd;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header-container,
+.main-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-container {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(65, 64, 64, 0.12), 0 1px 2px rgba(65, 64, 64, 0.12);
+    border-radius: .25rem;
+}
+
+.main-header {
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 1rem;
+}
+
+.main-button-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 100%;
+    border: .125rem dotted #d8d8d8;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+textarea {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+textarea::placeholder {
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.125rem;
+    background-color: #ad0d14;
+    color: white;
+    padding: .75rem 1.25rem;
+    border-radius: 4rem;
+    margin: auto;
+}
+
+
+/* Start Media Query */
+
+
+/* A Media Query max-width: 980px */
+
+@media screen and (max-width: 980px) {
+    /* Resized content to fit 980px  */
+    body {
+        max-width: 980px;
+    }
+    /* Styles for the wrapper div */
+    .header-container {
+        width: 100%;
+    }
+}
+
+
+/* A Media Query max-width: 786px */
+
+@media screen and (max-width: 786px) {
+    /* Resized content to fit 786px  */
+    body {
+        max-width: 786px;
+    }
+    /* Styles for the wrapper div */
+    .header-container {
+        width: 100%;
+    }
+    /* Styles for generate button */
+    #generate {
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+    /* Styles for copy button */
+}
+
+
+/* A Media Query max-width: 640px */
+
+@media screen and (max-width: 640px) {
+    /* Resized content to fit 640px  */
+    body {
+        max-width: 640px;
+    }
+    .header-container {
+        width: 100%;
+    }
+    .main-button-row {
+        margin-top: 20px;
+    }
+    /* Styles for generate button */
+    #generate {
+        margin-left: 22%;
+    }
+}
